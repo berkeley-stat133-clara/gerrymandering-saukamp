@@ -2,4 +2,20 @@
 title: Data Cleaning
 format: typst
 ---
+Read csv:
+```{r} 
+install.packages("tidyverse")
+library(tidyverse) 
 
+input_file <- "data/g24_sov_by_g24_svprec.csv" 
+output_file <- "g24_sov_by_g24_svprec_cleaned.csv"
+
+raw_votes <- read_csv(input_file, show_col_types = FALSE) 
+```
+
+rows 1-1174 are county 1 
+
+clean csv:
+```{r}
+    clean_svprec <- svp_rec |>
+        filter(ADDIST ! = 0)
