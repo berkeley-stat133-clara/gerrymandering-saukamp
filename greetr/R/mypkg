@@ -1,0 +1,38 @@
+---
+title: "test reprex"
+format: html
+---
+
+```{r}
+install.packages("reprex")
+library(reprex)
+
+```
+
+```{r}
+(y <- 1:4)
+mean(y)
+reprex()
+```
+
+```{r}
+hello <- function(x) {
+cat("Hello", x, "!\n")
+}
+```
+
+```{r}
+package.skeleton(
+  name = "greetr", 
+  list = c("hello") 
+)
+```
+
+```{r}
+library(tibble)
+
+greetings <- tibble(
+  greeting = c("Hello", "你你", "Hola", "Hei", "علیکم السلام"),
+  language = c("English", "Chinese", "Spanish", "Norwegian", "Urdu")
+)
+```

@@ -1,0 +1,9 @@
+    Package: greetr
+    Type: Package
+    Title: A function that says hello and anything you feed x
+    Version: 0.1.0
+    Date: 2025-11-19
+    Author: Who wrote it
+    Maintainer: Who to complain to <yourfault@somewhere.net>
+    Description: A function that makes it easy to say hello
+    License: MIT 
